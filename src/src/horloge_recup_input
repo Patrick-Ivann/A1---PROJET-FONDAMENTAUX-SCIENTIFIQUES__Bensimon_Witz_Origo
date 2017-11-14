@@ -1,0 +1,48 @@
+pour renvoyer les valeurs à l'arduino 
+
+
+const int buttonPin = 2;     // crée un identifiant pour la broche utilisée avec le BP
+const int ledPin =  13;      // crée un identifiant pour la broche utilisée avec la LED
+
+// Les variables sont modifiées au cours du programme
+int buttonState = 0;         // variable pour mémoriser l'état du bouton
+
+void setup() {
+  Serial.begin(9600);
+  // configure la broche numérique en SORTIE
+  pinMode(ledPin, OUTPUT);      
+  // configure la broche numérique en SORTIE
+  pinMode(buttonPin, INPUT);    
+}
+
+void loop(){
+ 
+
+
+    do{
+
+
+       // lit la valeur de l'état du bouton et la mémoris   dans la variable
+  buttonState = digitalRead(buttonPin);
+
+  // Teste si le bouton est appuyé
+  // c'est à dire si la variable buttonState est à 1
+  // NB : ne pas confondre = et == !
+  if (buttonState == HIGH) {    
+    // allume la LED   
+    digitalWrite(ledPin, HIGH);  
+    Serial.println("0");
+    
+  }
+  else { // sinon 
+    // éteint la LED
+    digitalWrite(ledPin, LOW);
+    Serial.println("1 PONEY");
+  }
+
+  delay(2000);
+      
+    }while(1);
+
+
+}
