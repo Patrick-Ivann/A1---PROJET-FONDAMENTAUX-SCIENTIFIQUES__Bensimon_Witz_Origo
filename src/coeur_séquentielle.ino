@@ -26,7 +26,7 @@ void coeur_led_sequéntiellement(){
 	/*		delay(period-timing);
 	*/		
 		if(i == 13){
-		    i = 3
+		    i = 3;
 		}
 
 
