@@ -2,7 +2,7 @@
 #include "param.h"
 #include "Arduino.h"
 
-#define freq 490
+#define freq 490 // pour permettre de modifier la vlaue à l'aide de la fréquence cardiaque du tyoe
 #define dutyCycle 50 // 100/dutycycle 10 pour 10%, 20 pour 5%
 
 
@@ -13,7 +13,7 @@ void coeur_led_sequéntiellement(){
   	int timing = period / dutyCycle;
 	/*	for(i=0; i<11; ++i)
 	*/
-	for(i=4; i<14; i++)
+	for(i=0; i<13; i++)
 	{
 		pinMode(i, OUTPUT);
 		digitalWrite(i, HIGH);// signal d'allumage donc signal 1
@@ -25,8 +25,8 @@ void coeur_led_sequéntiellement(){
 
 	/*		delay(period-timing);
 	*/		
-		if(i == 14){
-		    i = 3;
+		if(i == 13){
+		    i = 3
 		}
 
 
