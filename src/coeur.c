@@ -3,13 +3,16 @@ void coeur_unsurtrois(){
 	int i;
 	do{
 	
-/* Boucle d'allumage des 3 premiere LEDs */
+/* Boucle d'allumage des 3 premiere LEDs
+ * port 3 - 6 - 9 - 12
+ * avec initialisation des pinOutPut celon i
+ * Puis passage a l etat haut de ces ports */
 		for(i = 3; i< 14; i+=3)
 			{
-
 				pinMode(i,OUTPUT);
 				digitalWrite(i,HIGH);
 			}
+/* Attente de 222 ms */
 			delay(222);
 
 			for(i = 4; i< 14; i+=3)
