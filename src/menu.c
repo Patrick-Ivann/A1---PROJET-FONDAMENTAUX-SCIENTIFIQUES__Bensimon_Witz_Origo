@@ -10,20 +10,22 @@ void selection()
 
 
 
-	int selection;
-	printf("					Veuillez choisir un des modes d'allumage du module coeur\n");
-	printf("mode chenille (1)\n");
-	printf("mode 1/3 (2)\n");
-	printf("mode 1/2 (3)\n");
-	printf("mode allumage total (4)\n");
-	printf("mode 1/2 side (5)\n");
-	printf("mode slection (6)\n");
 
+		int select = 0 ;
 
+		printf("					Veuillez choisir un des modes d'allumage du module coeur\n");
+		printf("mode chenille (1)\n");
+		printf("mode 1/3 (2)\n");
+		printf("mode 1/2 (3)\n");
+		printf("mode allumage total (4)\n");
+		printf("mode 1/2 side (5)\n");
+		/*	printf("mode slection (6)\n");
+		*/
+		scanf("%d",&select);
 
+	
 
-	selection = scanf("%d",&selection);
-	generation(selection);
-
+	
+	generation(select);
 
 }
