@@ -144,7 +144,8 @@ void coeur_unsurdeux(){
 	}while(i<1);
 }
 
-/* Focntion pour faire battre le coeur en entier */
+/* Focntion pour faire battre le coeur en entier
+ * */
 void coeur_full(){
 	
 	int i;
