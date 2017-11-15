@@ -3,6 +3,7 @@ void coeur_unsurtrois(){
 	int i;
 	do{
 	
+/* Boucle d'allumage des 3 premiere LEDs */
 		for(i = 3; i< 14; i+=3)
 			{
 
