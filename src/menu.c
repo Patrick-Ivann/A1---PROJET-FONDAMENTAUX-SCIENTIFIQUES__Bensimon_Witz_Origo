@@ -1,146 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "menu.h"
-#include "stdio.h"
-#include "stdlib.h"
-#include "avrio.h"
-#include "delay.h"
+#include "generation.c"
 
-void coeur_unsurtrois(){
 
-	int i;
-	do{
-	
-		for(i = 3; i< 14; i+=3)
-			{
 
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(222);
+void selection()
+{
 
-			for(i = 4; i< 14; i+=3)
-			{
 
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(444);
 
-			for(i = 4; i< 14; i+=3)
-			{
+	int selection;
+	printf("					Veuillez choisir un des modes d'allumage du module coeur\n");
+	printf("mode chenille (1)\n");
+	printf("mode 1/3 (2)\n");
+	printf("mode 1/2 (3)\n");
+	printf("mode allumage total (4)\n");
+	printf("mode 1/2 side (5)\n");
+	printf("mode slection (6)\n");
 
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(222);
 
-			for(i = 4; i< 14; i+=)
-			{
 
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(444);
 
-	}while(i<1);
+	selection = scanf("%d",&selection);
+	generation(selection);
+
+
 }
-
-void coeur_unsurdeux(){
-
-	int i;
-	do{
-	
-		for(i = 3; i< 14; i+=2)
-			{
-
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(222);
-
-			for(i = 4; i< 14; i+=2)
-			{
-
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(444);
-
-			for(i = 4; i< 14; i+=2)
-			{
-
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(222);
-
-			for(i = 4; i< 14; i+=2)
-			{
-
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(444);
-
-	}while(i<1);
-}
-
-void coeur_full(){
-	
-	int i;
-	do{
-
-		for(i = 4; i< 14; i++){
-
-		pinMode(i,OUTPUT);
-		digitalWrite(i,HIGH);
-		}
-		delay(222);
-		for(i = 4; i< 14; i++){
-
-		pinMode(i,OUTPUT);
-		digitalWrite(i,HIGH);
-		}
-		delay(444);
-	}
-}
-
-
-void coeur_unsurdeuxsurleteco(){
-	int i;
-	do{
-	
-		for(i = 4; i< 8; i+=2)
-			{
-
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(222);
-
-			for(i = 4; i< 8; i+=2)
-			{
-
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(444);
-
-			for(i = 4; i< 13; i+=2)
-			{
-
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(222);
-
-			for(i = 4; i< 13; i+=2)
-			{
-
-				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
-			}
-			delay(444);
-
-	}while(i<1);
-}
-

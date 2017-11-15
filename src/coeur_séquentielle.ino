@@ -13,7 +13,7 @@ void coeur_led_sequéntiellement(){
   	int timing = period / dutyCycle;
 	/*	for(i=0; i<11; ++i)
 	*/
-	for(i=0; i<13; i++)
+	for(i=0; i<13; i++) 	
 	{
 		pinMode(i, OUTPUT);
 		digitalWrite(i, HIGH);// signal d'allumage donc signal 1
