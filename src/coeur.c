@@ -15,7 +15,7 @@ void coeur_unsurtrois(){
 			{
 
 				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
+				digitalWrite(i,LOW);
 			}
 			delay(444);
 
@@ -31,7 +31,7 @@ void coeur_unsurtrois(){
 			{
 
 				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
+				digitalWrite(i,LOW);
 			}
 			delay(444);
 
@@ -55,7 +55,7 @@ void coeur_unsurdeux(){
 			{
 
 				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
+				digitalWrite(i,LOW);
 			}
 			delay(444);
 
@@ -71,7 +71,7 @@ void coeur_unsurdeux(){
 			{
 
 				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
+				digitalWrite(i,LOW);
 			}
 			delay(444);
 
@@ -92,7 +92,7 @@ void coeur_full(){
 		for(i = 4; i< 14; i++){
 
 		pinMode(i,OUTPUT);
-		digitalWrite(i,HIGH);
+		digitalWrite(i,LOW);
 		}
 		delay(444);
 	}
@@ -115,7 +115,7 @@ void coeur_unsurdeuxsurleteco(){
 			{
 
 				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
+				digitalWrite(i,LOW);
 			}
 			delay(444);
 
@@ -131,7 +131,7 @@ void coeur_unsurdeuxsurleteco(){
 			{
 
 				pinMode(i,OUTPUT);
-				digitalWrite(i,HIGH);
+				digitalWrite(i,LOW);
 			}
 			delay(444);
 
