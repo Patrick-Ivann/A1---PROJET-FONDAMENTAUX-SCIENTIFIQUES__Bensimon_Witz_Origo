@@ -6,4 +6,4 @@ struct donnees{
 	int pouls;
 } typedef donnees;
 
-void ChargementLignes(int nombre_de_ligne, struct donnees **dataTab);
+FILE *lecture();
