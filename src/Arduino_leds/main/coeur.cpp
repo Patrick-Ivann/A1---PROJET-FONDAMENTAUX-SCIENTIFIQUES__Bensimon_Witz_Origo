@@ -10,8 +10,7 @@ void coeur_sequentielle(){
   /*  for(i=0; i<11; ++i)
   */
 
-  do
-  {
+  
 
     for(i=4; i<14; i++)   
   {
@@ -27,13 +26,12 @@ void coeur_sequentielle(){
   */    
   } 
     
-  } while (1);
+
   
 }
 void coeur_unsurtrois(){
 
   int i;
-  do{
   
     for(i = 7; i< 14; i+=3)
       {
@@ -74,13 +72,13 @@ void coeur_unsurtrois(){
       delay(444);
       //delay(period-timing);
 
-  }while(1);
+  
 }
 
 void coeur_unsurdeux(){
 
   int i;
-  do{
+ 
   
     for(i = 7; i< 14; i+=2)
       {
@@ -120,14 +118,13 @@ void coeur_unsurdeux(){
       delay(444);
       //delay(period-timing);
 
-  }while(i);
 
 }
 
 void coeur_full(){
   
   int i;
-  do{
+
 
     for(i = 4; i< 14; i++){
 
@@ -144,19 +141,18 @@ void coeur_full(){
     }
     delay(444);
     //delay(period-timing);
-  }while(1);
+  
 }
 
 
 void coeur_unsurdeuxsurleteco(){
    int i;
-  do{
-  
+ 
     for(i = 4; i< 8; i+=2)
       {
 
-        pinMode(i,OUTPUT);
-        digitalWrite(i,HIGH);
+        pinMode(8,OUTPUT);
+        digitalWrite(8,HIGH);
       }
       delay(222);
           //delay(timing);
@@ -189,7 +185,6 @@ void coeur_unsurdeuxsurleteco(){
       delay(444);
       //delay(period-timing);
 
-  }while(i<1);
 }
 
 

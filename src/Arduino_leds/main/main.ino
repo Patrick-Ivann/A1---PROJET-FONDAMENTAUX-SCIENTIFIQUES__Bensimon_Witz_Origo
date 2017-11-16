@@ -14,7 +14,23 @@ void setup()
   Serial.begin(9600);
   FreqMeasure.begin();
   
-  switch(selection){
+ 
+
+
+
+}
+
+void loop()
+{
+  int temps_var, pouls_var;
+  temps_var = temps();
+  pouls_var = pouls();
+
+  Serial.print(temps_var);
+  Serial.print(";");
+  Serial.print(pouls_var);
+
+   switch(selection){
     case 1 : 
         coeur_led_sequentiellement();
         break;
@@ -37,20 +53,6 @@ void setup()
     
     
   }
-
-
-
-}
-
-void loop()
-{
-  int temps_var, pouls_var;
-  temps_var = temps();
-  pouls_var = pouls();
-
-  Serial.print(temps_var);
-  Serial.print(";");
-  Serial.print(pouls_var);
 
 
 }
