@@ -1,0 +1,1 @@
+void bulle(donnees tab[], int N);
