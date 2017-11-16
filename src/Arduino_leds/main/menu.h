@@ -5,4 +5,4 @@ void coeur_unsurtrois()
 void coeur_unsurdeux();
 void coeur_unsurdeuxsurleteco();*/
 
-void selection();
+int selection();

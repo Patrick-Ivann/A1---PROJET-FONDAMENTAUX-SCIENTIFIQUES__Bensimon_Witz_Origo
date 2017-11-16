@@ -3,14 +3,13 @@
 #include "menu.h"
 #include "generation.c"
 
+/*
+ * Fonction de selection dans le menu de demarrage
+ * Permet de choisir le mode d'affichage.
+ */
 
-
-void selection()
+int selection()
 {
-
-
-
-
 		int select = 0 ;
 
 		printf("					Veuillez choisir un des modes d'allumage du module coeur\n");
@@ -23,9 +22,5 @@ void selection()
 		*/
 		scanf("%d",&select);
 
-	
-
-	
-	generation(select);
-
+	return select;
 }

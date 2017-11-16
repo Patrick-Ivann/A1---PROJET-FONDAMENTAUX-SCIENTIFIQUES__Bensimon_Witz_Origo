@@ -5,6 +5,9 @@
 
 int main(int argc, char const *argv[])
 {
-	selection();
+	int choix
+
+	choix =selection();
+	generation(choix);
 	return 0;
 }	
