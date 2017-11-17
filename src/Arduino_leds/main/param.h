@@ -1,1 +1,1 @@
-#define selection 5
+#define selection 4

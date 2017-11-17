@@ -178,7 +178,7 @@ select = choix();
 
  			main();
 
- 		break;
+ 		break;1
 
 	case 6: 
 			bulle(tableauDonnees,20);

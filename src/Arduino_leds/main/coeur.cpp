@@ -146,27 +146,27 @@ void coeur_symetrie(){
    j = 8;
    for (i = 8; i>2; i -=1)
    {
-	  if (j == 14)
-	  {
-		  j = 8;
-	  }
-	  if (i != 3){
-		  pinMode(i, OUTPUT);
-		  digitalWrite(i, HIGH);
-	  }
+    if (j == 14)
+    {
+      j = 8;
+    }
+    if (i != 3){
+      pinMode(i, OUTPUT);
+      digitalWrite(i, HIGH);
+    }
 
-	  if (j != 8)
-	  {
-		  pinMode(j, OUTPUT);
-		  digitalWrite(j, HIGH);
-	  }
-	  delay(666);
+    if (j != 8)
+    {
+      pinMode(j, OUTPUT);
+      digitalWrite(j, HIGH);
+    }
+    delay(666);
 
-	  digitalWrite(i, LOW);
-	  digitalWrite(j, LOW);
+    digitalWrite(i, LOW);
+    digitalWrite(j, LOW);
 
-	  delay(666);
-	  j +=1;
+    delay(666);
+    j +=1;
    }
 }
 
@@ -207,8 +207,8 @@ void coeur_symetrie(){
       delay(444);
       //delay(period-timing);
 
-*/
+}*/
 
-}
+
 
 

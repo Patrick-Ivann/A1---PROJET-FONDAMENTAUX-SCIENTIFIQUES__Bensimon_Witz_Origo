@@ -32,11 +32,11 @@ void loop()
 
    switch(selection){
     case 1 : 
-        coeur_led_sequentiellement();
+        coeur_sequentielle();
         break;
 
      case 2 : 
-       coeur_unsurdeux ;
+       coeur_unsurdeux() ;
         break;
 
      case 3 : 
@@ -48,7 +48,7 @@ void loop()
         break;
 
      case 5 : 
-        coeur_unsurdeuxsurleteco();
+        coeur_symetrie();
         break;
     
     
