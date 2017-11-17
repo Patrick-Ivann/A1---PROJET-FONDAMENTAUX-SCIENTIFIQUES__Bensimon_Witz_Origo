@@ -2,7 +2,7 @@
 #include "Arduino.h"
 #include "param.h"
 
-/* Fonction d'allumage séquentielle */
+/* Fonction d'allumage sÃ©quentielle */
 void coeur_sequentielle(){
 
   int i;
@@ -139,7 +139,7 @@ void coeur_full(){
 }
 
 /*
- * Fonction d'allumage de coté deux a deux
+ * Fonction d'allumage de cotÃ© deux a deux
  */
 void coeur_symetrie(){
    int i, j;
@@ -166,8 +166,9 @@ void coeur_symetrie(){
 	  digitalWrite(j, LOW);
 
 	  delay(666);
-	  j +=1
+	  j +=1;
    }
+}
 
 
 /*    for(i = 4; i< 8; i+=2)
